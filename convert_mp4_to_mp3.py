@@ -143,7 +143,7 @@ def main() -> None:
         bar_width = 30
         filled = int(bar_width * current / total) if total else bar_width
         bar = "#" * filled + "-" * (bar_width - filled)
-        sys.stdout.write(f"\r[{bar}] {current}/{total} files")
+        sys.stdout.write(f"\r[{bar}] {current}/{total} files\n")
         sys.stdout.flush()
 
     for index, video in enumerate(videos, start=1):
